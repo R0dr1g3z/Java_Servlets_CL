@@ -16,7 +16,7 @@ public class Session1Get extends HttpServlet {
         if (null == counter) {
             resp.getWriter().println("EMPTY");
         } else {
-            resp.getWriter().println(session.getAttribute("counter"));
+            resp.getWriter().println(counter);
             counter++;
             session.setAttribute("counter", counter);
         }
